@@ -1,0 +1,15 @@
+{% extends 'library/base.html' %}
+
+{% block content %}
+<h2>Books</h2>
+<a href="{% url 'add_book' %}" class="btn btn-success">Add a Book</a>
+<ul>
+    {% for book in books %}
+        <li>
+            <a href="{% url 'view_book' book.id %}"><strong>{{ book.title }}</strong></a> by {{ book.author }}
+            <a href="{% url 'edit_book' book.id %}" class="btn btn-primary">Edit</a>
+            <a href="{% url 'delete_book' book.id %}" class="btn btn-danger">Delete</a>
+        </li>
+    {% endfor %}
+</ul>
+{% endblock %}

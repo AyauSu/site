@@ -1,0 +1,276 @@
+/* Общие стили для страницы */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f5eb; /* Кремовый фон */
+    color: #333; /* Нейтральный текст */
+    line-height: 1.6;
+}
+
+/* Стили для шапки */
+header {
+    background: #001f3f; /* Темно-синий */
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Контейнер навигации */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Логотип слева, ссылки справа */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Логотип */
+.logo {
+    max-width: 80px; /* Ограничиваем ширину логотипа */
+    height: auto;
+    flex-shrink: 0; /* Запрещаем сжимать логотип */
+}
+
+/* Ссылки */
+.nav-links {
+    display: flex;
+    align-items: center; /* Центрируем ссылки по вертикали */
+    gap: 15px; /* Пробелы между ссылками */
+}
+
+.nav-links a,
+.nav-links span {
+    text-decoration: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links a:hover {
+    background-color: #f5c156; /* Золотистый акцент */
+    color: #001f3f; /* Темно-синий текст */
+    transform: scale(1.05); /* Увеличение ссылки */
+}
+
+/* Основной контент */
+main {
+    padding: 20px 5%;
+    background-color: #ffffff; /* Белый фон контента */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+h2 {
+    text-align: center;
+    color: #001f3f; /* Темно-синий акцент */
+}
+
+/* Стили для кнопок */
+button,
+.btn {
+    display: inline-block;
+    background-color: #001f3f; /* Темно-синий */
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #f5c156; /* Золотистый */
+    color: #001f3f; /* Темно-синий текст */
+    transform: scale(1.05); /* Увеличение кнопки */
+}
+
+.btn-danger {
+    background-color: #e63946; /* Красный для предупреждений */
+}
+
+.btn-danger:hover {
+    background-color: #c5303c; /* Более темный красный */
+}
+
+.btn-secondary {
+    background-color: #576574; /* Темно-серый */
+}
+
+.btn-secondary:hover {
+    background-color: #2f3542; /* Более темный оттенок */
+}
+
+/* Стили для списков */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #f7f5eb; /* Кремовый */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+ul li:hover {
+    background-color: #f5c156; /* Золотистый акцент */
+    color: #001f3f; /* Темно-синий текст */
+    transform: scale(1.02);
+}
+
+ul li a {
+    text-decoration: none;
+    color: #001f3f; /* Темно-синий */
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+ul li a:hover {
+    color: #f5c156; /* Золотистый */
+    transform: scale(1.05);
+}
+
+/* Стили для футера */
+footer {
+    background: #001f3f; /* Темно-синий */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Стили для форм */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff; /* Белый фон */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+form:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #f5c156; /* Золотистый */
+    box-shadow: 0 0 5px rgba(245, 193, 86, 0.5);
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #001f3f; /* Темно-синий */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #f5c156; /* Золотистый */
+    color: #001f3f; /* Темно-синий текст */
+    transform: scale(1.05);
+}
+
+form button:active {
+    transform: scale(0.98);
+}
+
+/* Сообщения об ошибках */
+form .error {
+    color: #e63946; /* Красный акцент */
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+form input.error,
+form textarea.error,
+form select.error {
+    border-color: #e63946; /* Красный для ошибок */
+    box-shadow: 0 0 5px rgba(230, 57, 70, 0.5);
+}
+
+/* Адаптивные стили для экранов шириной до 768px */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 5%;
+    }
+
+    .nav-container {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo {
+        max-width: 60px; /* Уменьшаем размер логотипа */
+    }
+}
+
+/* Адаптивные стили для экранов шириной до 480px */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    ul li {
+        font-size: 12px;
+    }
+
+    ul li a {
+        font-size: 14px;
+    }
+
+    form {
+        padding: 10px;
+    }
+
+    form input,
+    form textarea,
+    form button {
+        font-size: 14px;
+    }
+}
